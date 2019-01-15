@@ -10,6 +10,7 @@ export default createGlobalStyle`
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     font-size: calc(14px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
+    background: ${({ theme }) => theme.colors.bg};
   }
 
   code {

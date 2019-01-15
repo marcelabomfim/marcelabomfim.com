@@ -7,7 +7,7 @@ export default styled.header`
   height: 100vh;
   max-width: 100vw;
   max-height: 100vh;
-  background-color: #f3f3f3;
+  background: ${({ theme }) => theme.colors.bg};
   position: relative;
   text-align: center;
   display: flex;
@@ -35,7 +35,7 @@ export default styled.header`
 
   h1 {
     font-weight: 700;
-    color: #333;
+    color: ${({ theme }) => theme.colors.text};
     margin: 0;
     transition: opacity ease 0.3s;
   }
@@ -43,7 +43,7 @@ export default styled.header`
   h4 {
     font-weight: 300;
     font-style: italic;
-    color: #333;
+    color: ${({ theme }) => theme.colors.text};
     margin: 0;
     transition: opacity ease 0.3s;
   }
@@ -57,7 +57,7 @@ export default styled.header`
     transition: transform ease 0.5s;
 
     svg path {
-      fill: #333;
+      fill: ${({ theme }) => theme.colors.text};
       box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
     }
 

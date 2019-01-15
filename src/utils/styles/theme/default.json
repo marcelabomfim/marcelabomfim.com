@@ -1,0 +1,28 @@
+{
+  "colors": {
+    "primary": "#FF1493",
+    "secondary": "#000000",
+    "gray": "#BDBDBD",
+    "grayLight": "#EBEAF0"
+  },
+  "spacing": {
+    "xsmall": "4px",
+    "small": "8px",
+    "base": "16px",
+    "large": "24px",
+    "xlarge": "32px",
+    "xxlarge": "56px"
+  },
+  "maxWidth": "1140px",
+  "font": {
+    "family": "'Roboto', sans-serif",
+    "light": "300",
+    "normal": "400",
+    "bold": "500"
+  },
+  "breakpoints": {
+    "small": "575px",
+    "medium": "767px",
+    "large": "1169px"
+  }
+}
