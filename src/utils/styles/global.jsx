@@ -1,4 +1,4 @@
-import { createGlobalStyle } from 'styled-components'
+import { createGlobalStyle } from 'styled-components';
 
 export default createGlobalStyle`
   body {
@@ -9,6 +9,7 @@ export default createGlobalStyle`
       sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    font-size: calc(14px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
   }
 
   code {

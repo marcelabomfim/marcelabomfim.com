@@ -10,6 +10,6 @@ export default () => (
   <StyledContainer>
     <ReactSVG className="logo" src={logo} loading={() => <span>{`<M/>`}</span>} fallback={() => <img src={logoPNG} alt="Marcela Bomfim" />} />
     <h1>Marcela Bomfim</h1>
-    <h2>Desenvolvedora Front-End</h2>
+    <h4>Desenvolvedora Front-End</h4>
   </StyledContainer>
 );

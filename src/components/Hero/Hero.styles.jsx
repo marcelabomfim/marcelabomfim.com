@@ -34,15 +34,13 @@ export default styled.header`
   }
 
   h1 {
-    font-size: 48px;
     font-weight: 700;
     color: #333;
     margin: 0;
     transition: opacity ease 0.3s;
   }
 
-  h2 {
-    font-size: 24px;
+  h4 {
     font-weight: 300;
     font-style: italic;
     color: #333;
