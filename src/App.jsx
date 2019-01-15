@@ -17,10 +17,16 @@ export default class extends Component {
     theme: 'light'
   };
 
+  componentWillMount() {
+    window.localStorage.setItem('theme', 'light');
+  }
+
   handleThemeChange = e => {
     e.preventDefault();
     const { theme } = this.state;
-    this.setState({ theme: theme === 'light' ? 'dark' : 'light' });
+    const newTheme = theme === 'light' ? 'dark' : 'light';
+    this.setState({ theme: newTheme });
+    window.localStorage.setItem('theme', newTheme);
   };
 
   render() {
