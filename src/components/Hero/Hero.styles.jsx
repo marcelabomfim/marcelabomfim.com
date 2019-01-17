@@ -3,9 +3,9 @@ import styled from 'styled-components';
 import bg from '../../assets/bg.jpg';
 
 export default styled.header`
-  width: 100vw;
+  width: 100%;
+  max-width: 100%;
   height: 100vh;
-  max-width: 100vw;
   max-height: 100vh;
   background: ${({ theme }) => theme.colors.bg};
   position: relative;

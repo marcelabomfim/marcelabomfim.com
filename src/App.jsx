@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import { ThemeProvider } from 'styled-components';
 
 import ThemeSwitcher from './components/ThemeSwitcher';
+import Menu from './components/Menu';
 
 import Home from './containers/Home';
 
@@ -14,7 +15,8 @@ import store from './store';
 
 export default class extends Component {
   state = {
-    theme: 'light'
+    theme: 'light',
+    menuIsOpen: false
   };
 
   componentWillMount() {
@@ -29,14 +31,21 @@ export default class extends Component {
     window.localStorage.setItem('theme', newTheme);
   };
 
+  handleMenuToggle = e => {
+    e.preventDefault();
+    const { menuIsOpen } = this.state;
+    this.setState({ menuIsOpen: !menuIsOpen });
+  };
+
   render() {
-    const { theme } = this.state;
+    const { theme, menuIsOpen } = this.state;
 
     return (
       <Provider store={store}>
         <ThemeProvider theme={setTheme(theme)}>
           <Fragment>
             <GlobalStyle />
+            <Menu isOpen={menuIsOpen} handleMenuToggle={this.handleMenuToggle} />
             <ThemeSwitcher handleThemeChange={this.handleThemeChange} />
             <Router>
               <Switch>

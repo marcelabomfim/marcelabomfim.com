@@ -1,6 +1,11 @@
 import { createGlobalStyle } from 'styled-components';
 
 export default createGlobalStyle`
+  *, *:before, *:after {
+    box-sizing: border-box;
+    transform: translateZ(0);
+  }
+
   body {
     margin: 0;
     padding: 0;
@@ -16,5 +21,16 @@ export default createGlobalStyle`
   code {
     font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+  }
+
+  ul {
+    margin: 0;
+    padding: 0;
+
+    li {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
   }
 `;

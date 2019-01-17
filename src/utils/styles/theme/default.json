@@ -1,5 +1,7 @@
 {
   "colors": {
+    "light": "#F3F3F3",
+    "dark": "#333333",
     "primary": "#FF1493",
     "secondary": "#000000",
     "gray": "#BDBDBD",
