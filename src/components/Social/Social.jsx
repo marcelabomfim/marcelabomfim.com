@@ -1,15 +1,15 @@
 import React from 'react';
 import ReactSVG from 'react-svg';
 
-import linkedin from '../../assets/linkedin.svg';
-import linkedinPNG from '../../assets/linkedin.png';
-import linkedinPNGWhite from '../../assets/linkedin-white.png';
-import twitter from '../../assets/twitter.svg';
-import twitterPNG from '../../assets/twitter.png';
-import twitterPNGWhite from '../../assets/twitter-white.png';
-import github from '../../assets/github.svg';
-import githubPNG from '../../assets/github.png';
-import githubPNGWhite from '../../assets/github-white.png';
+import linkedin from 'assets/linkedin.svg';
+import linkedinPNG from 'assets/linkedin.png';
+import linkedinPNGWhite from 'assets/linkedin-white.png';
+import twitter from 'assets/twitter.svg';
+import twitterPNG from 'assets/twitter.png';
+import twitterPNGWhite from 'assets/twitter-white.png';
+import github from 'assets/github.svg';
+import githubPNG from 'assets/github.png';
+import githubPNGWhite from 'assets/github-white.png';
 
 import StyledContainer from './Social.styles';
 

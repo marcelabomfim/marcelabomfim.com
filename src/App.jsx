@@ -3,15 +3,16 @@ import { Provider } from 'react-redux';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import { ThemeProvider } from 'styled-components';
 
-import ThemeSwitcher from './components/ThemeSwitcher';
-import Menu from './components/Menu';
+import Menu from 'components/Menu';
+import ThemeSwitcher from 'components/ThemeSwitcher';
+import Social from 'components/Social';
 
-import Home from './containers/Home';
+import Home from 'containers/Home';
 
-import GlobalStyle from './utils/styles/global';
-import setTheme from './utils/styles/theme';
+import GlobalStyle from 'utils/styles/global';
+import setTheme from 'utils/styles/theme';
 
-import store from './store';
+import store from 'store';
 
 export default class extends Component {
   state = {
@@ -47,6 +48,7 @@ export default class extends Component {
             <GlobalStyle />
             <Menu isOpen={menuIsOpen} handleMenuToggle={this.handleMenuToggle} />
             <ThemeSwitcher handleThemeChange={this.handleThemeChange} />
+            <Social />
             <Router>
               <Switch>
                 <Route exact path="/" component={Home} />

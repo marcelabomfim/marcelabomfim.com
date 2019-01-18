@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-import bg from '../../assets/bg.jpg';
+import bg from 'assets/bg.jpg';
 
 export default styled.header`
   width: 100%;
