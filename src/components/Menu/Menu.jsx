@@ -11,18 +11,18 @@ export default ({ isOpen, handleMenuToggle }) => (
     <div className="flex">
       <ul>
         <li>
-          <Link activeClass="active" to="sobre" spy={true} smooth={true} duration={500}>
+          <Link onClick={handleMenuToggle} activeClass="active" to="sobre" spy={true} smooth={true} duration={500}>
             Sobre mim
           </Link>
         </li>
         <li>
-          <Link activeClass="active" to="portfolio" spy={true} smooth={true} duration={500}>
+          <Link onClick={handleMenuToggle} activeClass="active" to="portfolio" spy={true} smooth={true} duration={500}>
             Portfólio
           </Link>
         </li>
         <li>
-          <Link activeClass="active" to="contato" spy={true} smooth={true} duration={500}>
-            Contaot
+          <Link onClick={handleMenuToggle} activeClass="active" to="contato" spy={true} smooth={true} duration={500}>
+            Contato
           </Link>
         </li>
         <li>
