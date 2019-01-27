@@ -10,6 +10,9 @@ import StyledContainer from './Hero.styles';
 
 export default () => (
   <StyledContainer id="home">
+    <Plx className="plx-bar" parallaxData={plxDataBar} animateWhenNotInViewport>
+      <span className="bar" />
+    </Plx>
     <Plx className="plx-logo" parallaxData={plxDataLogo}>
       <Link to="home" spy={true} smooth={true} duration={500} title="Marcela Bomfim">
         <ReactSVG className="logo" src={logo} loading={() => <span>{`<M/>`}</span>} fallback={() => <img src={logoPNG} alt="Marcela Bomfim" />} />
@@ -21,6 +24,20 @@ export default () => (
     </Plx>
   </StyledContainer>
 );
+
+const plxDataBar = [
+  {
+    start: 500,
+    duration: 200,
+    properties: [
+      {
+        startValue: 0,
+        endValue: 1,
+        property: 'opacity'
+      }
+    ]
+  }
+];
 
 const plxDataLogo = [
   {
@@ -36,7 +53,7 @@ const plxDataLogo = [
       {
         startValue: -91,
         endValue: 9,
-        property: 'margin-top'
+        property: 'marginTop'
       }
     ]
   },
@@ -55,8 +72,8 @@ const plxDataLogo = [
 
 const plxDataTitle = [
   {
-    start: 50,
-    end: 400,
+    start: 0,
+    end: 300,
     properties: [
       {
         startValue: 50,
@@ -67,13 +84,13 @@ const plxDataTitle = [
     ]
   },
   {
-    start: 350,
+    start: 250,
     duration: 200,
     properties: [
       {
         startValue: 15,
         endValue: -120,
-        property: 'margin-top'
+        property: 'marginTop'
       },
       {
         startValue: 1,

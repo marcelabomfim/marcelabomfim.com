@@ -24,9 +24,20 @@ export default styled.header`
     background-image: url(${bg});
     background-position: center;
     background-size: cover;
-    background-attachment: fixed;
     opacity: 0.2;
     z-index: 0;
+  }
+
+  .bar {
+    content: '';
+    width: 100%;
+    height: 80px;
+    display: block;
+    background: ${({ theme }) => theme.colors.bg};
+    position: fixed;
+    top: 0;
+    left: 0;
+    box-shadow: 0px 0px 24px rgba(0, 0, 0, 0.25);
   }
 
   & > * {
@@ -78,6 +89,10 @@ export default styled.header`
     }
   }
 
+  .plx-bar {
+    opacity: 0;
+  }
+
   .plx-logo {
     width: 154px;
     height: 70px;
@@ -99,6 +114,10 @@ export default styled.header`
   }
 
   @media (max-width: ${({ theme }) => theme.breakpoints.medium}) {
+    .bar {
+      height: 62px;
+    }
+
     .plx-logo {
       width: 120px;
       margin-left: -60px;

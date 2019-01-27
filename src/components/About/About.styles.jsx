@@ -20,7 +20,7 @@ export default styled.section`
     margin-bottom: ${({ theme }) => theme.spacing.xlarge};
   }
 
-  .flex {
+  .info {
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
@@ -36,18 +36,20 @@ export default styled.section`
     }
   }
 
-  @media (max-width: ${({ theme }) => theme.breakpoints.medium}) {
-    padding: 80px 0 40px 0;
-
+  @media (max-width: ${({ theme }) => theme.breakpoints.large}) {
     .container {
       padding: 0 ${({ theme }) => theme.spacing.base};
     }
+  }
+
+  @media (max-width: ${({ theme }) => theme.breakpoints.medium}) {
+    padding: 80px 0 40px 0;
 
     h2 {
       margin-bottom: ${({ theme }) => theme.spacing.large};
     }
 
-    .flex {
+    .info {
       display: block;
 
       .text {

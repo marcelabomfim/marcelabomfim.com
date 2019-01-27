@@ -2,6 +2,8 @@ import React from 'react';
 
 import photo from 'assets/photo.png';
 
+import Skills from 'components/Skills';
+
 import StyledContainer from './About.styles';
 
 export default () => (
@@ -9,7 +11,7 @@ export default () => (
     <div className="container">
       <h1>Olá</h1>
       <h2>Eu sou a Marcela Bomfim</h2>
-      <div className="flex">
+      <div className="info">
         <img src={photo} alt="Prazer, Marcela Bomfim!" />
         <div className="text">
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
@@ -20,6 +22,7 @@ export default () => (
           </p>
         </div>
       </div>
+      <Skills />
     </div>
   </StyledContainer>
 );
