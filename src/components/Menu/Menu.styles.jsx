@@ -128,23 +128,22 @@ export default styled.nav`
         left: 0;
         width: 100%;
         height: 4px;
-        background-color: ${({ theme }) => theme.colors.text};
+        background-color: ${({ theme, isOpen }) => (isOpen ? theme.colors.light : theme.colors.text)};
         transform: translateY(-50%) scaleY(5);
         transition: 0.5s;
         opacity: ${({ isOpen }) => (isOpen ? '0' : '1')};
       }
 
-      &.ativo,
-      &:hover {
-        a {
-          color: ${({ theme }) => theme.colors.primary};
-        }
+      &:hover a,
+      a.active {
+        color: ${({ theme }) => theme.colors.primary};
       }
 
       a {
+        position: relative;
         cursor: pointer;
         display: block;
-        color: ${({ theme }) => theme.colors.light};
+        color: ${({ theme, isOpen }) => (isOpen ? theme.colors.light : theme.colors.dark)};
         opacity: ${({ isOpen }) => (isOpen ? '1' : '0')};
         text-decoration: none;
       }
@@ -191,8 +190,10 @@ export default styled.nav`
     }
 
     button {
-      top: ${({ theme }) => theme.spacing.base};
-      left: ${({ theme }) => theme.spacing.base};
+      width: 50px;
+      height: 50px;
+      top: ${({ theme }) => theme.spacing.xsmall};
+      left: ${({ theme }) => theme.spacing.xsmall};
     }
 
     button span {

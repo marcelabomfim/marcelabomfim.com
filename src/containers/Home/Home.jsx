@@ -1,11 +1,11 @@
 import React from 'react';
 
 import Hero from 'components/Hero';
-import Social from 'components/Social';
+import About from 'components/About';
 
 export default () => (
   <main>
     <Hero />
-    <Social />
+    <About />
   </main>
 );

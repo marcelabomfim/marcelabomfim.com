@@ -3,7 +3,6 @@ import { createGlobalStyle } from 'styled-components';
 export default createGlobalStyle`
   *, *:before, *:after {
     box-sizing: border-box;
-    transform: translateZ(0);
   }
 
   body {
@@ -16,6 +15,9 @@ export default createGlobalStyle`
     -moz-osx-font-smoothing: grayscale;
     font-size: calc(14px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
     background: ${({ theme }) => theme.colors.bg};
+    color: ${({ theme }) => theme.colors.text};
+    max-width: 100%;
+    overflow-x: hidden;
   }
 
   code {

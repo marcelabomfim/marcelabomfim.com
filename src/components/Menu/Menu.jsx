@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-scroll';
 
 import StyledContainer from './Menu.styles';
 
@@ -10,13 +11,19 @@ export default ({ isOpen, handleMenuToggle }) => (
     <div className="flex">
       <ul>
         <li>
-          <a href="#sobre">Sobre mim</a>
+          <Link activeClass="active" to="sobre" spy={true} smooth={true} duration={500}>
+            Sobre mim
+          </Link>
         </li>
         <li>
-          <a href="#portfolio">Portfólio</a>
+          <Link activeClass="active" to="portfolio" spy={true} smooth={true} duration={500}>
+            Portfólio
+          </Link>
         </li>
         <li>
-          <a href="#contato">Contato</a>
+          <Link activeClass="active" to="contato" spy={true} smooth={true} duration={500}>
+            Contaot
+          </Link>
         </li>
         <li>
           <span />

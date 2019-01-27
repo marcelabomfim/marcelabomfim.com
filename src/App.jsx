@@ -46,9 +46,9 @@ export default class extends Component {
         <ThemeProvider theme={setTheme(theme)}>
           <Fragment>
             <GlobalStyle />
-            <Menu isOpen={menuIsOpen} handleMenuToggle={this.handleMenuToggle} />
             <ThemeSwitcher handleThemeChange={this.handleThemeChange} />
             <Social />
+            <Menu isOpen={menuIsOpen} handleMenuToggle={this.handleMenuToggle} />
             <Router>
               <Switch>
                 <Route exact path="/" component={Home} />
