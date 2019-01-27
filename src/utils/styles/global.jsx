@@ -3,6 +3,12 @@ import { createGlobalStyle } from 'styled-components';
 export default createGlobalStyle`
   *, *:before, *:after {
     box-sizing: border-box;
+
+  }
+
+  *::selection {
+    background: ${({ theme }) => theme.colors.primary};
+    color: ${({ theme }) => theme.colors.light};
   }
 
   body {
@@ -18,6 +24,7 @@ export default createGlobalStyle`
     color: ${({ theme }) => theme.colors.text};
     max-width: 100%;
     overflow-x: hidden;
+    transition: all .3s ease;
   }
 
   code {

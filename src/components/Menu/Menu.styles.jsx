@@ -14,6 +14,7 @@ export default styled.nav`
   box-shadow: 10px 0px 24px rgba(0, 0, 0, 0.25);
   padding: ${({ theme }) => theme.spacing.large} ${({ theme }) => theme.spacing.xlarge};
   padding-top: 72px;
+  user-select: none;
 
   button {
     display: inline-block;
@@ -28,6 +29,11 @@ export default styled.nav`
     cursor: pointer;
     outline: none;
     z-index: 2;
+    transition: transform 0.3s ease;
+
+    &:hover {
+      transform: translateX(${({ theme }) => theme.spacing.xsmall});
+    }
 
     span {
       position: relative;
@@ -108,17 +114,18 @@ export default styled.nav`
         transition-delay: ${({ isOpen }) => (isOpen ? '0.40s' : '0')};
       }
 
-      &:hover a,
-      a.active {
-        color: ${({ theme }) => theme.colors.primary};
-      }
-
       a {
         position: relative;
         cursor: pointer;
         display: block;
         color: ${({ theme }) => theme.colors.light};
         text-decoration: none;
+        transition: color 0.3s ease;
+
+        &.active,
+        &:hover {
+          color: ${({ theme }) => theme.colors.primary};
+        }
       }
 
       span {

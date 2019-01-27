@@ -5,7 +5,7 @@ import StyledContainer from './Menu.styles';
 
 export default ({ isOpen, handleMenuToggle }) => (
   <StyledContainer isOpen={isOpen}>
-    <button onClick={handleMenuToggle}>
+    <button onClick={handleMenuToggle} title={isOpen ? 'Fechar menu' : 'Abrir menu'}>
       <span />
     </button>
     <div className="flex">

@@ -28,13 +28,24 @@ export default styled.aside`
     margin: ${({ theme }) => theme.spacing.base} 0;
     transform: rotate(90deg);
     color: ${({ theme }) => theme.colors.text};
+    user-select: none;
   }
 
   a {
     margin-top: ${({ theme }) => theme.spacing.xsmall};
+    transition: transform 0.3s ease;
 
     svg path {
       fill: ${({ theme }) => theme.colors.text};
+      transition: fill 0.3s ease;
+    }
+
+    &:hover {
+      transform: scale(1.2);
+
+      svg path {
+        fill: ${({ theme }) => theme.colors.primary};
+      }
     }
   }
 

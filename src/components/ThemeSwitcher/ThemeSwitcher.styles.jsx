@@ -14,6 +14,7 @@ export default styled.button`
   overflow: hidden;
   cursor: pointer;
   outline: none;
+  transition: transform 0.3s ease;
 
   &:before {
     content: '';
@@ -25,6 +26,10 @@ export default styled.button`
     position: absolute;
     top: -6px;
     left: -12px;
+  }
+
+  &:hover {
+    transform: rotateY(180deg);
   }
 
   @media (max-width: ${({ theme }) => theme.breakpoints.medium}) {

@@ -38,6 +38,7 @@ export default styled.header`
     color: ${({ theme }) => theme.colors.text};
     margin: 0;
     transition: opacity ease 0.3s;
+    user-select: none;
   }
 
   h4 {
@@ -46,6 +47,7 @@ export default styled.header`
     color: ${({ theme }) => theme.colors.text};
     margin: 0;
     transition: opacity ease 0.3s;
+    user-select: none;
   }
 
   .logo {
@@ -84,6 +86,7 @@ export default styled.header`
     margin-top: -91px;
     left: 50%;
     margin-left: -77px;
+    transform-style: preserve-3d;
   }
 
   .plx-title {
