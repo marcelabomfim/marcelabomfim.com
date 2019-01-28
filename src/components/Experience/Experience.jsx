@@ -5,7 +5,7 @@ import Item from './Experience.Item';
 
 export default () => (
   <StyledContainer>
-    <h3>Experiências</h3>
+    <h3>Experiências Profissionais</h3>
     <ul>
       <Item />
       <Item />

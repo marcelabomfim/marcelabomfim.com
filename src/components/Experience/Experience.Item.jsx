@@ -37,7 +37,9 @@ export default class extends Component {
             <strong>Tecnologias e Competências:</strong> HTML5, CSS3, Javascript, React, Redux, Styled-Components, SASS, Node.js, Git, REST API, Cypress E2E Tests.
           </p>
         </div>
-        <button className="exp-toggle" onClick={this.handleToggle(!open)} />
+        <button className="exp-toggle" onClick={this.handleToggle(!open)}>
+          <span />
+        </button>
       </li>
     );
   }

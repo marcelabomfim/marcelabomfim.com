@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export default styled.section`
-  padding: 100px 0 80px 0;
+  padding-top: 100px;
 
   .container {
     width: 100%;
@@ -43,7 +43,7 @@ export default styled.section`
   }
 
   @media (max-width: ${({ theme }) => theme.breakpoints.medium}) {
-    padding: 80px 0 40px 0;
+    padding-top: 80px;
 
     h2 {
       margin-bottom: ${({ theme }) => theme.spacing.large};

@@ -5,7 +5,7 @@ export default styled.aside`
   bottom: ${({ theme }) => theme.spacing.large};
   right: ${({ theme }) => theme.spacing.xlarge};
   width: ${({ theme }) => theme.spacing.large};
-  z-index: 2;
+  z-index: 11;
   display: flex;
   flex-direction: column;
   align-items: center;

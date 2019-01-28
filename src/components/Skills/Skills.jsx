@@ -30,7 +30,7 @@ export default () => (
       <Tags items={['HTML5', 'CSS3', 'JAVASCRIPT', 'REACT.JS', 'REDUX', 'STYLED-COMPONENTS', 'SASS', 'GULP', 'REST APIS', 'GIT', 'NPM SCRIPTS', 'RESPONSIVE DESIGN', 'MOBILE FIRST']} />
     </div>
     <div>
-      <h4>Experiência com:</h4>
+      <h4>Tenho experiência com:</h4>
       <Tags items={['PHP', 'MYSQL', 'NODE.JS', 'VUE.JS', 'UI/UX DESIGN', 'SERVERLESS', 'LAMBDA', 'MONGODB', 'CI/CD', 'AUTOMATED TESTS', 'SEO']} />
     </div>
   </StyledContainer>

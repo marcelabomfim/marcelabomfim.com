@@ -17,7 +17,7 @@ export default ({ isOpen, handleMenuToggle }) => (
         </li>
         <li>
           <Link onClick={handleMenuToggle} activeClass="active" to="portfolio" spy={true} smooth={true} duration={500}>
-            Portfólio
+            Portfolio
           </Link>
         </li>
         <li>

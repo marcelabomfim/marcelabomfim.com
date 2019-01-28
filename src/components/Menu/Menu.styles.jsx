@@ -8,7 +8,7 @@ export default styled.nav`
   position: fixed;
   top: 0;
   left: ${({ isOpen }) => (isOpen ? '0' : '-400px')};
-  z-index: 2;
+  z-index: 11;
   transition: 0.5s;
   background-color: ${({ theme }) => theme.colors.dark};
   box-shadow: 10px 0px 24px rgba(0, 0, 0, 0.25);
@@ -122,7 +122,10 @@ export default styled.nav`
         text-decoration: none;
         transition: color 0.3s ease;
 
-        &.active,
+        &.active {
+          color: ${({ theme }) => theme.colors.secondary};
+        }
+
         &:hover {
           color: ${({ theme }) => theme.colors.primary};
         }
@@ -155,6 +158,10 @@ export default styled.nav`
     a {
       color: inherit;
       text-decoration: none;
+
+      &:hover {
+        color: ${({ theme }) => theme.colors.primary};
+      }
     }
   }
 

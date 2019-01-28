@@ -4,7 +4,7 @@ export default styled.button`
   position: fixed;
   top: ${({ theme }) => theme.spacing.large};
   right: ${({ theme }) => theme.spacing.xlarge};
-  z-index: 2;
+  z-index: 11;
   width: ${({ theme }) => theme.spacing.xlarge};
   height: ${({ theme }) => theme.spacing.xlarge};
   border-radius: 50%;

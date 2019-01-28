@@ -22,7 +22,7 @@ export default styled.div`
         background: ${({ theme }) => theme.colors.grayLight};
 
         .exp {
-          &-toggle {
+          &-toggle span {
             transform: rotate(135deg);
           }
 
@@ -49,21 +49,29 @@ export default styled.div`
     }
 
     &-toggle {
-      width: ${({ theme }) => theme.spacing.base};
-      height: ${({ theme }) => theme.spacing.base};
-      display: block;
+      width: ${({ theme }) => theme.spacing.xxlarge};
+      height: ${({ theme }) => theme.spacing.xxlarge};
+      position: absolute;
+      top: ${({ theme }) => theme.spacing.large};
+      right: ${({ theme }) => theme.spacing.large};
       background: transparent;
       border: 0;
-      border-left: 1px solid ${({ theme }) => theme.colors.text};
-      border-bottom: 1px solid ${({ theme }) => theme.colors.text};
-      padding: 0;
-      transform: rotate(-45deg);
-      position: absolute;
-      top: ${({ theme }) => theme.spacing.xlarge};
-      right: ${({ theme }) => theme.spacing.xlarge};
-      outline: none;
-      transition: transform 0.3s ease;
       cursor: pointer;
+      outline: none;
+
+      span {
+        width: ${({ theme }) => theme.spacing.base};
+        height: ${({ theme }) => theme.spacing.base};
+        display: block;
+        border-left: 1px solid ${({ theme }) => theme.colors.text};
+        border-bottom: 1px solid ${({ theme }) => theme.colors.text};
+        padding: 0;
+        transform: rotate(-45deg);
+        position: absolute;
+        top: ${({ theme }) => theme.spacing.base};
+        right: ${({ theme }) => theme.spacing.base};
+        transition: transform 0.3s ease;
+      }
     }
 
     &-title {
@@ -80,6 +88,11 @@ export default styled.div`
 
       a {
         color: ${({ theme }) => theme.colors.primary};
+        transition: color 0.3s ease;
+
+        &:hover {
+          color: ${({ theme }) => theme.colors.secondary};
+        }
       }
     }
 
@@ -91,6 +104,8 @@ export default styled.div`
   }
 
   @media (max-width: ${({ theme }) => theme.breakpoints.medium}) {
+    margin-top: 20px;
+
     .exp {
       &-item {
         padding: ${({ theme }) => theme.spacing.base};
@@ -103,8 +118,8 @@ export default styled.div`
       }
 
       &-toggle {
-        top: ${({ theme }) => theme.spacing.large};
-        right: ${({ theme }) => theme.spacing.large};
+        top: ${({ theme }) => theme.spacing.small};
+        right: ${({ theme }) => theme.spacing.small};
       }
 
       &-title {
