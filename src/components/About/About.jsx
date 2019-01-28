@@ -3,6 +3,7 @@ import React from 'react';
 import photo from 'assets/photo.png';
 
 import Skills from 'components/Skills';
+import Experience from 'components/Experience';
 
 import StyledContainer from './About.styles';
 
@@ -23,6 +24,7 @@ export default () => (
         </div>
       </div>
       <Skills />
+      <Experience />
     </div>
   </StyledContainer>
 );
