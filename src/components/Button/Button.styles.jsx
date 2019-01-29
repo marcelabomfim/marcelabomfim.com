@@ -10,7 +10,6 @@ export default styled.button`
   font-size: 0.8em;
   position: relative;
   cursor: pointer;
-  transition: background 0.3s ease;
 
   span {
     width: ${({ theme }) => theme.spacing.base};
@@ -46,8 +45,6 @@ export default styled.button`
   }
 
   &:hover {
-    background: ${({ theme }) => theme.colors.secondary};
-
     span {
       right: ${({ theme }) => theme.spacing.base};
     }

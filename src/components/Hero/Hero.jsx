@@ -6,6 +6,8 @@ import { Link } from 'react-scroll';
 import logo from 'assets/logo.svg';
 import logoPNG from 'assets/logo.png';
 
+import Social from 'components/Social';
+
 import StyledContainer from './Hero.styles';
 
 export default () => (
@@ -22,6 +24,7 @@ export default () => (
       <h1>Marcela Bomfim</h1>
       <h4>Desenvolvedora Front-End</h4>
     </Plx>
+    <Social fixed />
   </StyledContainer>
 );
 

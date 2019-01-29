@@ -5,7 +5,6 @@ import { ThemeProvider } from 'styled-components';
 
 import Menu from 'components/Menu';
 import ThemeSwitcher from 'components/ThemeSwitcher';
-import Social from 'components/Social';
 
 import Home from 'containers/Home';
 
@@ -48,7 +47,6 @@ export default class extends Component {
             <GlobalStyle />
             <Menu isOpen={menuIsOpen} handleMenuToggle={this.handleMenuToggle} />
             <ThemeSwitcher handleThemeChange={this.handleThemeChange} />
-            <Social />
             <Router>
               <Switch>
                 <Route exact path="/" component={Home} />

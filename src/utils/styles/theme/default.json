@@ -4,8 +4,7 @@
     "dark": "#333333",
     "primary": "#42bcd5",
     "secondary": "#FF1493",
-    "gray": "#BDBDBD",
-    "grayLight": "#EBEAF0"
+    "gray": "#BDBDBD"
   },
   "spacing": {
     "xsmall": "4px",

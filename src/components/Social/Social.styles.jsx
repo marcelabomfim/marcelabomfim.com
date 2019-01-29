@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export default styled.aside`
-  position: fixed;
+  position: absolute;
   bottom: ${({ theme }) => theme.spacing.large};
   right: ${({ theme }) => theme.spacing.xlarge};
   width: ${({ theme }) => theme.spacing.large};
@@ -52,10 +52,14 @@ export default styled.aside`
   @media (max-width: ${({ theme }) => theme.breakpoints.medium}) {
     bottom: ${({ theme }) => theme.spacing.base};
     right: ${({ theme }) => theme.spacing.base};
+    align-items: stretch;
 
-    &:before,
-    span {
+    &:before {
       display: none;
+    }
+
+    span {
+      font-size: 11px;
     }
   }
 `;
