@@ -25,12 +25,6 @@ export default ({ isOpen, handleMenuToggle }) => (
             Contato
           </Link>
         </li>
-        <li>
-          <span />
-        </li>
-        <li>
-          <a href="#curriculo">Currículo</a>
-        </li>
       </ul>
 
       <p>
