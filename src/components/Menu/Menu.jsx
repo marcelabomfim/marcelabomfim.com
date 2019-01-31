@@ -50,8 +50,8 @@ export default ({ isOpen, handleMenuToggle }) => (
         </strong>{' '}
         e hospedado no{' '}
         <strong>
-          <a href="https://www.netlify.com/" target="_blank" rel="noopener noreferrer">
-            Netlify
+          <a href="https://pages.github.com/" target="_blank" rel="noopener noreferrer">
+            GitHub Pages
           </a>
         </strong>
       </p>
