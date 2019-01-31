@@ -3,7 +3,6 @@
     "light": "#F3F3F3",
     "dark": "#333333",
     "primary": "#42bcd5",
-    "secondary": "#FF1493",
     "gray": "#BDBDBD"
   },
   "spacing": {

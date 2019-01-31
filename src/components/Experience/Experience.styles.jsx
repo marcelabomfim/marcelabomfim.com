@@ -6,6 +6,10 @@ export default styled.div`
   h3 {
     margin: 0;
     margin-bottom: ${({ theme }) => theme.spacing.xlarge};
+
+    &:nth-of-type(2) {
+      margin-top: ${({ theme }) => theme.spacing.xxlarge};
+    }
   }
 
   .exp {
@@ -57,7 +61,6 @@ export default styled.div`
       background: transparent;
       border: 0;
       cursor: pointer;
-      outline: none;
 
       span {
         width: ${({ theme }) => theme.spacing.base};
@@ -80,18 +83,24 @@ export default styled.div`
       flex-direction: column;
       justify-content: center;
       padding-right: ${({ theme }) => theme.spacing.xlarge};
+      width: 100%;
+      cursor: pointer;
 
       h4,
       p {
         margin: 0;
       }
 
+      p {
+        font-size: 0.8em;
+      }
+
       a {
-        color: ${({ theme }) => theme.colors.primary};
+        color: inherit;
         transition: color 0.3s ease;
 
         &:hover {
-          color: ${({ theme }) => theme.colors.secondary};
+          color: ${({ theme }) => theme.colors.primary};
         }
       }
     }

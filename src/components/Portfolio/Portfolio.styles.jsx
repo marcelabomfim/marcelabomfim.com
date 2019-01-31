@@ -30,7 +30,6 @@ export default styled.section`
       display: block;
       position: relative;
       margin-bottom: ${({ theme }) => theme.spacing.xxlarge};
-      background-size: cover;
       box-shadow: 0 4px 14px rgba(0, 0, 0, 0.25);
       transition: box-shadow 0.3s ease;
       overflow: hidden;
@@ -40,7 +39,12 @@ export default styled.section`
         box-shadow: 0 10px 60px 0 rgba(0, 0, 0, 0.25);
 
         &:before {
-          opacity: 0.95;
+          opacity: 1;
+        }
+
+        .port-img {
+          filter: blur(2px);
+          transform: scale(1.2);
         }
 
         .port-info {
@@ -58,9 +62,19 @@ export default styled.section`
         left: 0;
         z-index: 1;
         background: linear-gradient(to top, #000 2%, rgba(0, 0, 0, 0.7) 60%);
-        opacity: 0.6;
+        opacity: 0.7;
         transition: opacity 0.3s ease;
       }
+    }
+
+    &-img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-size: cover;
+      transition: filter 0.3s ease, transform 3s linear;
     }
 
     &-info {
@@ -77,19 +91,23 @@ export default styled.section`
       transition: bottom 0.3s ease;
       color: ${({ theme }) => theme.colors.light};
 
-      h4,
-      p {
+      h4 {
         margin: 0;
+        margin-bottom: ${({ theme }) => theme.spacing.xsmall};
         text-shadow: 0px 0px 0px rgba(0, 0, 0, 0.25);
       }
 
-      p {
+      ul {
+        display: flex;
         margin: 0;
         margin-bottom: ${({ theme }) => theme.spacing.large};
-      }
+        font-size: 0.75em;
+        font-weight: ${({ theme }) => theme.font.bold};
+        color: ${({ theme }) => theme.colors.primary};
 
-      ul {
-        margin: ${({ theme }) => theme.spacing.large} 0;
+        li {
+          margin-right: ${({ theme }) => theme.spacing.small};
+        }
       }
     }
   }

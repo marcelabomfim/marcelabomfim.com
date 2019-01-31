@@ -27,7 +27,6 @@ export default styled.nav`
     top: ${({ theme }) => theme.spacing.large};
     left: ${({ theme }) => theme.spacing.xlarge};
     cursor: pointer;
-    outline: none;
     z-index: 2;
     transition: transform 0.3s ease;
 
@@ -122,10 +121,7 @@ export default styled.nav`
         text-decoration: none;
         transition: color 0.3s ease;
 
-        &.active {
-          color: ${({ theme }) => theme.colors.secondary};
-        }
-
+        &.active,
         &:hover {
           color: ${({ theme }) => theme.colors.primary};
         }

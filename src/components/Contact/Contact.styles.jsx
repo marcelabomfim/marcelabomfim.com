@@ -5,6 +5,9 @@ import Social from 'components/Social/Social.styles';
 export default styled.section`
   padding: 100px 0 120px 0;
   text-align: center;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
 
   .container {
     width: 100%;
@@ -25,10 +28,11 @@ export default styled.section`
     margin: 0 auto;
 
     a {
-      color: ${({ theme }) => theme.colors.primary};
+      color: inherit;
+      transition: color 0.3s ease;
 
       &:hover {
-        color: ${({ theme }) => theme.colors.secondary};
+        color: ${({ theme }) => theme.colors.primary};
       }
     }
   }

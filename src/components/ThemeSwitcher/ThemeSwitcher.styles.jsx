@@ -13,7 +13,6 @@ export default styled.button`
   box-shadow: inset 0px 0px 0px 2px ${({ theme }) => theme.colors.text};
   overflow: hidden;
   cursor: pointer;
-  outline: none;
   transition: transform 0.3s ease;
 
   &:before {

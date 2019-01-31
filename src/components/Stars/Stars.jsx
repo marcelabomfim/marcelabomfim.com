@@ -11,8 +11,10 @@ import StyledContainer from './Stars.styles';
 
 export default ({ score, title }) => (
   <StyledContainer>
-    {[1, 2, 3, 4, 5].map(i => (
-      <li key={`star_${title}_${i}`}>{i <= score ? <ReactSVG src={starOn} loading={() => <span>{`★`}</span>} fallback={() => <img src={starOnPNG} alt="Star On" />} /> : <ReactSVG src={star} loading={() => <span>{`☆`}</span>} fallback={() => <img src={starPNG} alt="Star" />} />}</li>
+    {['Iniciante', 'Básico', 'Intermediário', 'Avançado', 'Fluente'].map((i, key) => (
+      <li key={`star_${title}_${key}`} title={i}>
+        {key < score ? <ReactSVG src={starOn} loading={() => <span>{`★`}</span>} fallback={() => <img src={starOnPNG} alt="Star On" />} /> : <ReactSVG src={star} loading={() => <span>{`☆`}</span>} fallback={() => <img src={starPNG} alt="Star" />} />}
+      </li>
     ))}
   </StyledContainer>
 );

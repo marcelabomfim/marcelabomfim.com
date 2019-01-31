@@ -17,13 +17,13 @@ export default styled.div`
   }
 
   & > div {
-    &:first-of-type {
+    &:last-of-type {
       width: 30%;
     }
 
-    &:not(:first-of-type) {
+    &:not(:last-of-type) {
       width: 35%;
-      padding-left: ${({ theme }) => theme.spacing.large};
+      padding-right: ${({ theme }) => theme.spacing.large};
     }
   }
 
@@ -49,10 +49,10 @@ export default styled.div`
     }
 
     & > div {
-      &:first-of-type,
-      &:not(:first-of-type) {
+      &:last-of-type,
+      &:not(:last-of-type) {
         width: 100%;
-        padding-left: 0;
+        padding-right: 0;
         margin-bottom: ${({ theme }) => theme.spacing.large};
       }
     }
