@@ -16,9 +16,17 @@
   },
   "experiences": [
     {
+      "title": "Desenvolvedora Front-End Sênior",
+      "where": "CARGOBR",
+      "when": "Fev/19 a Atual",
+      "about": "Atuando remotamente como desenvolvedora front-end sênior lidando diretamente com o desenvolvimento e estrutura das aplicações do site, páginas de cotação de fretes, dashboard de pedidos e outros projetos internos, além da integração com Back-End, testes unitários e testes end-to-end.",
+      "skills": "HTML5, CSS3, SASS, Javascript, React, Redux, Styled-Components, Jest, Enzyme, Cypress, REST API, GIT, Continuous Delivery, Continuous Integration, Bitbucket Pipelines, End-to-End Tests, Unit Tests, Scrum.",
+      "image": "cargobr.jpg"
+    },
+    {
       "title": "Desenvolvedora Front-End Líder",
       "where": "BG7",
-      "when": "Out/18 a Atual",
+      "when": "Out/18 a Fev/19",
       "about": "Atuação como líder e desenvolvedora em dois projetos lidando diretamente com a estrutura das aplicações, organização do time, Desenvolvimento Front-End com React e integração de dados com o Back-End via API Rest.",
       "skills": "Team leader, Scrum, HTML5, CSS3, Javascript, React, Redux, Styled-Components, SASS, Node.js, Git, REST API, Cypress E2E Tests.",
       "image": "bg7.jpg"
