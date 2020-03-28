@@ -10,5 +10,8 @@ export default {
   // locale
   'locale.change': 'Trocar idioma',
   'locale.toEN': 'Trocar idioma para Inglês',
-  'locale.toPT': 'Trocar idioma para Português'
+  'locale.toPT': 'Trocar idioma para Português',
+
+  // hero
+  'hero.developer': 'Desenvolvedora Front-End'
 };

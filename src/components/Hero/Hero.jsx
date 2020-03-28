@@ -2,6 +2,7 @@ import React from 'react';
 import ReactSVG from 'react-svg';
 import Plx from 'react-plx';
 import { Link } from 'react-scroll';
+import { FormattedMessage } from 'react-intl';
 
 import logo from 'assets/logo.svg';
 import logoPNG from 'assets/logo.png';
@@ -22,7 +23,9 @@ export default () => (
     </Plx>
     <Plx className="plx-title" parallaxData={plxDataTitle}>
       <h1>Marcela Bomfim</h1>
-      <h4>Desenvolvedora Front-End</h4>
+      <h4>
+        <FormattedMessage id="hero.developer" />
+      </h4>
     </Plx>
     <Social fixed />
   </StyledContainer>
