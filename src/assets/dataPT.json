@@ -4,11 +4,11 @@
     "english": [
       {
         "title": "Listening/Speaking",
-        "score": 2
+        "score": 3
       },
       {
         "title": "Reading/Writing",
-        "score": 3
+        "score": 4
       }
     ],
     "solidKnowledge": ["HTML5", "CSS3", "JAVASCRIPT", "REACT.JS", "REDUX", "STYLED-COMPONENTS", "SASS", "GULP", "REST APIS", "GIT", "NPM SCRIPTS", "RESPONSIVE DESIGN", "MOBILE FIRST"],

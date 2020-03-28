@@ -21,5 +21,11 @@ export default {
   'about.hello': 'Hey',
   'about.iam': 'I am Marcela Bomfim',
   'about.imgAlt': 'Pleasure, Marcela Bomfim!',
-  'about.text': data.about
+  'about.text': data.about,
+
+  // skills
+  'skills.title': 'Skills',
+  'skills.solid': 'Solid knowledge in:',
+  'skills.experience': 'I have experience with:',
+  'skills.english': 'English level:'
 };
