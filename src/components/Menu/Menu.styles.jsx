@@ -147,13 +147,10 @@ export default styled.nav`
     transition-duration: 0.3s;
     transition-delay: ${({ isOpen }) => (isOpen ? '0.50s' : '0')};
 
-    strong {
-      font-weight: ${({ theme }) => theme.font.bold};
-    }
-
     a {
       color: inherit;
       text-decoration: none;
+      font-weight: ${({ theme }) => theme.font.bold};
 
       &:hover {
         color: ${({ theme }) => theme.colors.primary};
