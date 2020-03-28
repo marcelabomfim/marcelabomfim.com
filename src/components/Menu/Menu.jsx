@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-scroll';
+import { FormattedMessage } from 'react-intl';
 
 import StyledContainer from './Menu.styles';
 
@@ -12,17 +13,17 @@ export default ({ isOpen, handleMenuToggle }) => (
       <ul>
         <li>
           <Link onClick={handleMenuToggle} activeClass="active" to="sobre" spy={true} smooth={true} duration={500}>
-            Sobre mim
+            <FormattedMessage id="menu.about" />
           </Link>
         </li>
         <li>
           <Link onClick={handleMenuToggle} activeClass="active" to="portfolio" spy={true} smooth={true} duration={500}>
-            Portfolio
+            <FormattedMessage id="menu.portfolio" />
           </Link>
         </li>
         <li>
           <Link onClick={handleMenuToggle} activeClass="active" to="contato" spy={true} smooth={true} duration={500}>
-            Contato
+            <FormattedMessage id="menu.contact" />
           </Link>
         </li>
       </ul>
