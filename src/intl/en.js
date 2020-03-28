@@ -1,3 +1,5 @@
+import data from 'assets/dataEN.json';
+
 export default {
   // menu
   'menu.about': 'About me',
@@ -13,5 +15,11 @@ export default {
   'locale.toPT': 'Change language to Portuguese',
 
   // hero
-  'hero.developer': 'Front-End Developer'
+  'hero.developer': 'Front-End Developer',
+
+  // about
+  'about.hello': 'Hey',
+  'about.iam': 'I am Marcela Bomfim',
+  'about.imgAlt': 'Pleasure, Marcela Bomfim!',
+  'about.text': data.about
 };

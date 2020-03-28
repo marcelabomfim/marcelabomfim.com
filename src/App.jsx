@@ -15,7 +15,7 @@ import setTheme from 'utils/styles/theme';
 
 import store from 'store';
 
-import intlMessages from './intl';
+import intlMessages from 'intl';
 
 export default class extends Component {
   state = {
