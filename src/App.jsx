@@ -2,6 +2,7 @@ import React, { Component, Fragment } from 'react';
 import { Provider } from 'react-redux';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import { ThemeProvider } from 'styled-components';
+import { IntlProvider } from 'react-intl';
 
 import Menu from 'components/Menu';
 import ThemeSwitcher from 'components/ThemeSwitcher';
@@ -12,6 +13,8 @@ import GlobalStyle from 'utils/styles/global';
 import setTheme from 'utils/styles/theme';
 
 import store from 'store';
+
+import intlMessages from './intl';
 
 export default class extends Component {
   state = {
@@ -39,22 +42,25 @@ export default class extends Component {
 
   render() {
     const { theme, menuIsOpen } = this.state;
+    const locale = theme === 'light' ? 'pt' : 'en';
 
     return (
-      <Provider store={store}>
-        <ThemeProvider theme={setTheme(theme)}>
-          <Fragment>
-            <GlobalStyle />
-            <Menu isOpen={menuIsOpen} handleMenuToggle={this.handleMenuToggle} />
-            <ThemeSwitcher handleThemeChange={this.handleThemeChange} />
-            <Router>
-              <Switch>
-                <Route exact path="/" component={Home} />
-              </Switch>
-            </Router>
-          </Fragment>
-        </ThemeProvider>
-      </Provider>
+      <IntlProvider locale={locale} messages={intlMessages[locale]}>
+        <Provider store={store}>
+          <ThemeProvider theme={setTheme(theme)}>
+            <Fragment>
+              <GlobalStyle />
+              <Menu isOpen={menuIsOpen} handleMenuToggle={this.handleMenuToggle} />
+              <ThemeSwitcher handleThemeChange={this.handleThemeChange} />
+              <Router>
+                <Switch>
+                  <Route exact path="/" component={Home} />
+                </Switch>
+              </Router>
+            </Fragment>
+          </ThemeProvider>
+        </Provider>
+      </IntlProvider>
     );
   }
 }
