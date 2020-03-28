@@ -6,6 +6,7 @@ import { IntlProvider } from 'react-intl';
 
 import Menu from 'components/Menu';
 import ThemeSwitcher from 'components/ThemeSwitcher';
+import LocaleSwitcher from 'components/LocaleSwitcher';
 
 import Home from 'containers/Home';
 
@@ -18,13 +19,26 @@ import intlMessages from './intl';
 
 export default class extends Component {
   state = {
-    theme: 'light',
-    menuIsOpen: false
+    locale: 'en',
+    menuIsOpen: false,
+    theme: 'light'
   };
 
   componentWillMount() {
+    window.localStorage.setItem('locale', 'en');
     window.localStorage.setItem('theme', 'light');
   }
+
+  handleLocaleChange = locale => {
+    this.setState({ locale });
+    window.localStorage.setItem('locale', locale);
+  };
+
+  handleMenuToggle = e => {
+    e.preventDefault();
+    const { menuIsOpen } = this.state;
+    this.setState({ menuIsOpen: !menuIsOpen });
+  };
 
   handleThemeChange = e => {
     e.preventDefault();
@@ -34,15 +48,8 @@ export default class extends Component {
     window.localStorage.setItem('theme', newTheme);
   };
 
-  handleMenuToggle = e => {
-    e.preventDefault();
-    const { menuIsOpen } = this.state;
-    this.setState({ menuIsOpen: !menuIsOpen });
-  };
-
   render() {
-    const { theme, menuIsOpen } = this.state;
-    const locale = theme === 'light' ? 'pt' : 'en';
+    const { locale, menuIsOpen, theme } = this.state;
 
     return (
       <IntlProvider locale={locale} messages={intlMessages[locale]}>
@@ -52,6 +59,7 @@ export default class extends Component {
               <GlobalStyle />
               <Menu isOpen={menuIsOpen} handleMenuToggle={this.handleMenuToggle} />
               <ThemeSwitcher handleThemeChange={this.handleThemeChange} />
+              <LocaleSwitcher handleLocaleChange={this.handleLocaleChange} locale={locale} />
               <Router>
                 <Switch>
                   <Route exact path="/" component={Home} />

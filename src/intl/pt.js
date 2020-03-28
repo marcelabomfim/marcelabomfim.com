@@ -5,5 +5,10 @@ export default {
   'menu.contact': 'Contato',
   'menu.close': 'Fechar menu',
   'menu.open': 'Abrir menu',
-  'menu.message': 'Portfolio pessoal de <a>código aberto</a>'
+  'menu.message': 'Portfolio pessoal de <a>código aberto</a>',
+
+  // locale
+  'locale.change': 'Trocar idioma',
+  'locale.toEN': 'Trocar idioma para Inglês',
+  'locale.toPT': 'Trocar idioma para Português'
 };
