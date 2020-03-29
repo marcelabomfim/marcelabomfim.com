@@ -46,5 +46,12 @@ export default {
   'contact.text': 'You can contact me through my social networks or send an email to <a>{email}</a>, easy right!?',
 
   // social
-  'social.followMe': 'Follow me at {title}'
+  'social.followMe': 'Follow me at {title}',
+
+  // stars
+  'stars.level1': 'Beginner',
+  'stars.level2': 'Basic',
+  'stars.level3': 'Intermediate',
+  'stars.level4': 'Advanced',
+  'stars.level5': 'Fluent'
 };

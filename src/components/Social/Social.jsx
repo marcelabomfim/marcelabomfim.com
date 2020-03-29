@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactSVG from 'react-svg';
-import { useIntl, FormattedMessage } from 'react-intl';
+import { useIntl } from 'react-intl';
 
 import linkedin from 'assets/linkedin.svg';
 import linkedinPNG from 'assets/linkedin.png';

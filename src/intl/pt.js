@@ -46,5 +46,12 @@ export default {
   'contact.text': 'Você pode entrar em contato comigo através das minhas redes sociais ou enviar um email para <a>{email}</a>, fácil né !?',
 
   // social
-  'social.followMe': 'Siga-me no {title}'
+  'social.followMe': 'Siga-me no {title}',
+
+  // stars
+  'stars.level1': 'Iniciante',
+  'stars.level2': 'Básico',
+  'stars.level3': 'Intermediário',
+  'stars.level4': 'Avançado',
+  'stars.level5': 'Fluente'
 };
