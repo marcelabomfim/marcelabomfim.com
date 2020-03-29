@@ -43,5 +43,8 @@ export default {
   // contact
   'contact.title': 'Entre em Contato',
   'contact.subtitle': 'E aí, vamos bater um papo ?',
-  'contact.text': 'Você pode entrar em contato comigo através das minhas redes sociais ou enviar um email para <a>{email}</a>, fácil né !?'
+  'contact.text': 'Você pode entrar em contato comigo através das minhas redes sociais ou enviar um email para <a>{email}</a>, fácil né !?',
+
+  // social
+  'social.followMe': 'Siga-me no {title}'
 };

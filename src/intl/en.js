@@ -43,5 +43,8 @@ export default {
   // contact
   'contact.title': 'Contact',
   'contact.subtitle': "So, let's chat?",
-  'contact.text': 'You can contact me through my social networks or send an email to <a>{email}</a>, easy right!?'
+  'contact.text': 'You can contact me through my social networks or send an email to <a>{email}</a>, easy right!?',
+
+  // social
+  'social.followMe': 'Follow me at {title}'
 };
