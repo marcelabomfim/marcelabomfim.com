@@ -34,5 +34,9 @@ export default {
   'experience.academic': 'Formação Acadêmica',
   'experience.techs': 'Tecnologias e Competências:',
   'experience.experienceList': JSON.stringify(data.experiences),
-  'experience.academicList': JSON.stringify(data.academic)
+  'experience.academicList': JSON.stringify(data.academic),
+
+  // portfolio
+  'portfolio.visit': 'Visitar',
+  'portfolio.list': JSON.stringify(data.portfolio)
 };

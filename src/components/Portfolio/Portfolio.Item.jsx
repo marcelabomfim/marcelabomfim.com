@@ -1,9 +1,11 @@
 import React from 'react';
+import { useIntl } from 'react-intl';
 
 import Button from 'components/Button';
 
 export default ({ data }) => {
   const image = require(`assets/portfolio/${data.image}`);
+  const { formatMessage } = useIntl();
 
   return (
     <li className="port-item">
@@ -16,7 +18,7 @@ export default ({ data }) => {
           ))}
         </ul>
         <a href={data.link} target="_blank" rel="noopener noreferrer">
-          <Button label="Visitar" />
+          <Button label={formatMessage({ id: 'portfolio.visit' })} />
         </a>
       </div>
     </li>
