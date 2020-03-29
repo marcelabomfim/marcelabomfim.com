@@ -38,5 +38,10 @@ export default {
 
   // portfolio
   'portfolio.visit': 'Visitar',
-  'portfolio.list': JSON.stringify(data.portfolio)
+  'portfolio.list': JSON.stringify(data.portfolio),
+
+  // contact
+  'contact.title': 'Entre em Contato',
+  'contact.subtitle': 'E aí, vamos bater um papo ?',
+  'contact.text': 'Você pode entrar em contato comigo através das minhas redes sociais ou enviar um email para <a>{email}</a>, fácil né !?'
 };
