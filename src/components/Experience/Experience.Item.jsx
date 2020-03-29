@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { useIntl, FormattedMessage } from 'react-intl';
 
 export default class extends Component {
   state = {
@@ -30,7 +31,10 @@ export default class extends Component {
           <p>{data.about}</p>
           {data.skills && (
             <p>
-              <strong>Tecnologias e Competências:</strong> {data.skills}
+              <strong>
+                <FormattedMessage id="experience.techs" />
+              </strong>{' '}
+              {data.skills}
             </p>
           )}
         </div>

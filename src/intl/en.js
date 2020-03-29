@@ -27,5 +27,12 @@ export default {
   'skills.title': 'Skills',
   'skills.solid': 'Solid knowledge in:',
   'skills.experience': 'I have experience with:',
-  'skills.english': 'English level:'
+  'skills.english': 'English level:',
+
+  // experience
+  'experience.title': 'Professional Experiences',
+  'experience.academic': 'Academic',
+  'experience.techs': 'Technologies and Skills:',
+  'experience.experienceList': JSON.stringify(data.experiences),
+  'experience.academicList': JSON.stringify(data.academic)
 };

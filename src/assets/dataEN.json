@@ -1,5 +1,5 @@
 {
-  "about": "<p><strong><i>Front-End</i></strong> Developer graduated in <strong>Computer Science</strong>, I live in <strong>Brazil</strong> but one day I still want to move to <strong>Canada</strong>!</p><p>I have been working with Web Development since 2013, I have also worked with <i>Back-End</i> but today my focus is <i>Front-End</i> using technologies such as <i>React.js</i>, <i>Redux</i>, <i>Javascript</i>, <i>HTML5</i>, <i>CSS3</i>, <i>SASS</i>, <i>PHP</i>, <i>Node.js</i> and others.</p><p>During this period I was able to participate in several projects, get involved in the methodology of great teams and share my knowledge with colleagues in the area.</p><p>I also like to keep myself updated and connected with the development community in general, going to events, participating in groups or even following the professionals and companies that stand out.</p><p>So I always try to keep this page up to date so that people can also know a little about me!</p>",
+  "about": "<p><strong><i>Front-End</i></strong> Developer with a Bachelor of <strong>Computer Science</strong> degree, I live in <strong>Brazil</strong> but one day I still want to move to <strong>Canada</strong>!</p><p>I have been working with Web Development since 2013, I have also worked with <i>Back-End</i> but today my focus is <i>Front-End</i> using technologies such as <i>React.js</i>, <i>Redux</i>, <i>Javascript</i>, <i>HTML5</i>, <i>CSS3</i>, <i>SASS</i>, <i>PHP</i>, <i>Node.js</i> and others.</p><p>During this period I was able to participate in several projects, get involved in the methodology of great teams and share my knowledge with colleagues in the area.</p><p>I also like to keep myself updated and connected with the development community in general, going to events, participating in groups or even following the professionals and companies that stand out.</p><p>So I always try to keep this page up to date so that people can also know a little about me!</p>",
   "skills": {
     "english": [
       {
@@ -16,59 +16,59 @@
   },
   "experiences": [
     {
-      "title": "Desenvolvedora Front-End Sênior",
+      "title": "Senior Front-End Developer",
       "where": "CARGOBR",
-      "when": "Fev/19 a Atual",
-      "about": "Atuando remotamente como desenvolvedora front-end sênior lidando diretamente com o desenvolvimento e estrutura das aplicações do site, páginas de cotação de fretes, dashboard de pedidos e outros projetos internos, além da integração com Back-End, testes unitários e testes end-to-end.",
+      "when": "Feb/2019 to Current Job",
+      "about": "Acting remotely as a senior front-end developer dealing directly with the development and structure of the website applications, freight quote pages, order dashboard and other internal projects, as well as back-end integration, unit testing and end-to- end.",
       "skills": "HTML5, CSS3, SASS, Javascript, React, Redux, Styled-Components, Jest, Enzyme, Cypress, REST API, GIT, Continuous Delivery, Continuous Integration, Bitbucket Pipelines, End-to-End Tests, Unit Tests, Scrum.",
       "image": "cargobr.jpg"
     },
     {
-      "title": "Desenvolvedora Front-End Líder",
+      "title": "Lead Front-End Developer",
       "where": "BG7",
-      "when": "Out/18 a Fev/19",
-      "about": "Atuação como líder e desenvolvedora em dois projetos lidando diretamente com a estrutura das aplicações, organização do time, Desenvolvimento Front-End com React e integração de dados com o Back-End via API Rest.",
+      "when": "Oct/2018 to Feb/2019",
+      "about": "Development of web applications with React and integration of data with the Back-End via API Rest. Project structure and organization of the front-end team.",
       "skills": "Team leader, Scrum, HTML5, CSS3, Javascript, React, Redux, Styled-Components, SASS, Node.js, Git, REST API, Cypress E2E Tests.",
       "image": "bg7.jpg"
     },
     {
-      "title": "Desenvolvedora Front-End",
+      "title": "Front-End Developer",
       "where": "SmartMei",
-      "when": "Jul/18 a Set/18",
-      "about": "Processo de migração do Front-End de uma aplicação de Angular para React e Typescript. Estudo e implementação de mockups. Integração de dados com o Back-End utilizando GraphQL e ApolloClient.",
+      "when": "Jul/2018 to Oct/2018",
+      "about": "Front-end development of reusable components with React and Typescript. Study and implementation of mockups. Data integration with Back-End using GraphQL and ApolloClient.",
       "skills": "HTML5, CSS3, Javascript, React, Redux, Typescript, SASS, Material Ui, Node.js, Heroku, Git, Unit Testing, GraphQL, Prototyping, Mockups, Figma, Invision.",
       "image": "smartmei.jpg"
     },
     {
-      "title": "Desenvolvedora Front-End",
+      "title": "Front-End Developer",
       "where": "LojasKD",
-      "when": "Abr/17 a Jul/18",
-      "about": "Desenvolvimento Front-end para o e-commerce e seus projetos internos, dando sequência aos trabalhos de UX/UI a fim de melhorar o desempenho, usabilidade e conversão da loja. Atuação em squads multidisciplinares com resultados medidos através de KPIs e OKRs.",
+      "when": "Apr/2017 to Jul/2018",
+      "about": "Front-end development for e-commerce and its in-house projects, streaming UX / UI jobs to improve store performance, usability, and conversion. Performance in multidisciplinary squads with results measured through KPIs and OKRs.",
       "skills": "HTML5, CSS3, PHP, Javascript, React, Redux, Styled-Components, SASS,  Next.js, Node.js, MongoDB, Lambda, Serverless, GIT, Docker, Continuous  Delivery, Pipelines, End-to-End Testing, A/B Testing, UX.",
       "image": "lojaskd.jpg"
     },
     {
-      "title": "Desenvolvedora Web",
+      "title": "Web Developer",
       "where": "Tática Web",
-      "when": "Set/13 a Mar/17",
-      "about": "Desenvolvimento de sites institucionais, lojas virtuais e sistemas web  utilizando. Design responsivo e mobile first. Desempenho e otimização de páginas.",
+      "when": "Sep/2013 to Mar/2017",
+      "about": "Development of institutional websites, e-commerces and web systems using HTML5, CSS3, jQuery, PHP and MySQL. Responsive and mobile first design. Performance and page optimization.",
       "skills": "HTML5, CSS3, Javascript, PHP, Wordpress, MySql, Responsive Design, Mobile First, Cross-Browser, SEO.",
       "image": "taticaweb.jpg"
     },
     {
-      "title": "Estagiária de TI",
+      "title": "IT Trainee",
       "where": "Caixa Econômica Federal",
-      "when": "Fev/13 a Set/13",
-      "about": "Suporte em TI aos usuários do escritório. Alimentação de sistemas internos para acompanhamento de dados de transações e serviços capturados através de webservice. Desenvolvimento e manutenção de site intranet.",
+      "when": "Feb/13 to Sep/13",
+      "about": "IT support for office users. Feeding internal systems to monitor transaction data and services captured through webservice. Development and maintenance of intranet site.",
       "image": "caixa.jpg"
     }
   ],
   "academic": [
     {
-      "title": "Ciência da Computação",
+      "title": "Computer Science",
       "where": "UBM",
-      "when": "Fev 2011 a Dez 2014",
-      "about": "Apresentado o desenvolvimento de um Sistema de Automação Residencial, como trabalho de conclusão de curso, utilizando Arduíno para controlar os componentes da residência através de uma interface Web disponível para computadores, celulares ou qualquer dispositivo com acesso à internet.",
+      "when": "Feb/2011 to Dec/2014",
+      "about": "The development of a Home Automation System was presented, as a course conclusion work, using Arduino to control the components of the residence through a web interface available for computers, cell phones or any device with internet access.",
       "skills": "Arduíno, C, HTML5, CSS3, Javascript, PHP, Apache.",
       "image": "ubm.jpg"
     }
@@ -84,19 +84,19 @@
       "title": "New York Tourism and Transport",
       "link": "http://www.newyorktt.com.br/",
       "image": "nytt.jpg",
-      "hashtags": ["DesenvolvimentoFrontEnd"]
+      "hashtags": ["FrontEndDevelopment"]
     },
     {
       "title": "Mais Abraços",
       "link": "http://www.maisabracos.com.br",
       "image": "maisabracos.jpg",
-      "hashtags": ["DesenvolvimentoFrontEnd"]
+      "hashtags": ["FrontEndDevelopment"]
     },
     {
       "title": "Codepen",
       "link": "http://www.codepen.io/cecelabomfim",
       "image": "codepen.jpg",
-      "hashtags": ["Experimentos"]
+      "hashtags": ["Experiments"]
     }
   ]
 }
