@@ -53,5 +53,8 @@ export default {
   'stars.level2': 'Basic',
   'stars.level3': 'Intermediate',
   'stars.level4': 'Advanced',
-  'stars.level5': 'Fluent'
+  'stars.level5': 'Fluent',
+
+  // theme
+  'theme.switch': 'Switch theme'
 };
